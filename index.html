@@ -2,15 +2,15 @@
 <html>
 	<head>
 		<meta http-equiv='content-type' content='text/html; charset=utf-8' />
-		<link rel='stylesheet' href='style.css' type='text/css' />
+		<link rel='stylesheet' href='css/style.css' type='text/css' />
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsy3XQlycteDYR5RXNY4h1AgDT1TmUjKA" charset="utf-8"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="main.js" charset="utf-8"></script>
+		<script src="js/main.js" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id='colors' class='cell'>
 			<div id='top'>
-				<textarea class='clr-fg' id='color-value' placeholder='Enter color here.'></textarea>
+				<textarea class='clr-fg' id='color-value' placeholder='Enter color'></textarea>
 				<button class='clr-fg' id='change-color'>Change</button>
 			</div>
 			<div id='bottom'>
@@ -160,6 +160,7 @@
 		<div id='options' class='cell'>
 			<button id='save' class='clr-fg'>Save</button>
 			<button id='load' class='clr-fg'>Load</button>
+			<input type='file' id='fileid' hidden></input>
 		</div>
 	</body>
 </html>
