@@ -32,8 +32,10 @@ div.cell
 }
 div#title
 {
-	left:40%;
+	left:5%;
 	top:5%;
+	width:25%;
+	height:65%;
 	font-family:'Ubuntu Mono';
 	font-size:2em;
 	text-align:center;
@@ -48,27 +50,29 @@ div#title
 div#city
 {
 	width:100%;
-	height:40%;
+	height:10%;
 	font-family:'Pompiere';
-	font-size:1.5vw;
+	font-size:2.5vw;
 	margin-top:4%;
 }
 div#date
 {
 	width:100%;
-	height:25%;
+	height:7.5%;
 	font-size:1.8vw;
 }
 div#time
 {
 	width:100%;
-	height:25%;
+	height:7.5%;
 	font-size:2vw;
 }
 div#colors
 {
-	left:15%;
-	top:15%;
+	left:5%;
+	top:80%;
+	width:25%;
+	height:15%;
 }
 div#top
 {
@@ -133,10 +137,13 @@ li#s{background:#95a5a6;}
 li#t{background:#7f8c8d;}
 div#stats
 {
-	left:65%;
-	top:15%;
+	left:35%;
+	top:5%;
+	width:25%;
+	height:15%;
 	font-family:'Ubuntu Mono';
 	font-size:1em;
+	display:table;
 
 	-webkit-touch-callout:none;
 	  -webkit-user-select:none;
@@ -152,13 +159,17 @@ div#name
 }
 div#goal1
 {
-	left:15%;
-	top:70%;
+	left:35%;
+	top:30%;
+	width:25%;
+	height:65%;
 }
 div#goal2
 {
-	left:40%;
-	top:80%;
+	left:65%;
+	top:5%;
+	width:25%;
+	height:15%;
 }
 div.div-goal ol
 {
@@ -234,12 +245,16 @@ div.add,div.sub
 div#note1
 {
 	left:65%;
-	top:70%;
+	top:30%;
+	width:25%;
+	height:15%;
 }
 div#note2
 {
-	left:5%;
-	top:40%;
+	left:65%;
+	top:55%;
+	width:25%;
+	height:15%;
 }
 div#note1 textarea,div#note2 textarea
 {
@@ -252,8 +267,10 @@ div#note1 textarea,div#note2 textarea
 }
 div#options
 {
-	left:75%;
-	top:40%;
+	left:65%;
+	top:80%;
+	width:25%;
+	height:15%;
 }
 div#options button
 {
