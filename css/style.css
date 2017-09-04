@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Pompiere');
-@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 *
 {
@@ -14,12 +13,6 @@ html,body
 	width:100%;
 	height:100%;
 	background:#1a1a1c;
-	/*background-image:url(../background.jpg);
-	-webkit-background-size:cover;
-	   -moz-background-size:cover;
-	    -ms-background-size:cover;
-	     -o-background-size:cover;
-	        background-size:cover;*/
 }
 path.prog-bar{font-size:0;}
 div.cell
@@ -35,7 +28,7 @@ div#title
 	left:5%;
 	top:5%;
 	width:25%;
-	height:65%;
+	height:15%;
 	font-family:'Ubuntu Mono';
 	font-size:2em;
 	text-align:center;
@@ -50,23 +43,68 @@ div#title
 div#city
 {
 	width:100%;
-	height:10%;
+	height:50%;
 	font-family:'Pompiere';
 	font-size:2.5vw;
-	margin-top:4%;
 }
 div#date
 {
 	width:100%;
-	height:7.5%;
-	font-size:1.8vw;
+	height:25%;
+	font-size:1.3vw;
 }
 div#time
 {
 	width:100%;
-	height:7.5%;
-	font-size:2vw;
+	height:25%;
+	font-size:1.5vw;
 }
+div#tasks
+{
+	left:5%;
+	top:30%;
+	width:25%;
+	height:40%;
+}
+div#tasks ol
+{
+	width:100%;
+	height:100%;
+}
+li.task
+{
+	width:100%;
+	height:10%;
+}
+textarea.task-name
+{
+	font-family:'Ubuntu Mono';
+	font-size:1.5vw;
+	float:left;
+	background:#2b2b2d;
+	width:60%;
+	height:100%;
+}
+textarea.task-time
+{
+	font-family:'Ubuntu Mono';
+	font-size:1.25vw;
+	float:left;
+	background:#2b2b2d;
+	width:20%;
+	height:100%;
+}
+li.task button
+{
+	font-family:'Ubuntu Mono';
+	font-size:.5vw;
+	float:left;
+	width:10%;
+	height:100%;
+	background:#2b2b2d;
+}
+button.task-start{float:left;width:10%;height:100%;background:#2b2b2d;}
+button.task-stop{float:left;width:10%;height:100%;background:#2b2b2d;}
 div#colors
 {
 	left:5%;
@@ -171,6 +209,7 @@ div#goal2
 	width:25%;
 	height:15%;
 }
+div#goal2 ol li textarea.goal {font-size:1.25vw;}
 div.div-goal ol
 {
 	width:100%;
@@ -263,7 +302,7 @@ div#note1 textarea,div#note2 textarea
 	background:#2b2b2d;
 	resize:none;
 	font-family:'Pompiere';
-	font-size:2vw;
+	font-size:1vw;
 }
 div#options
 {

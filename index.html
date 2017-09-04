@@ -3,11 +3,81 @@
 	<head>
 		<meta http-equiv='content-type' content='text/html; charset=utf-8' />
 		<link rel='stylesheet' href='css/style.css' type='text/css' />
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsy3XQlycteDYR5RXNY4h1AgDT1TmUjKA" charset="utf-8"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/main.js" charset="utf-8"></script>
+		<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCsy3XQlycteDYR5RXNY4h1AgDT1TmUjKA' charset='utf-8'></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+		<script src='js/main.js' charset='utf-8'></script>
+		<script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 	</head>
 	<body>
+		<div id='title' class='cell clr-fg'>
+			<div id='city'></div>
+			<div id='date'></div>
+			<div id='time'></div>
+		</div>
+		<div id='tasks' class='cell'>
+			<ol>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+				<li class='task'>
+					<textarea class='task-name clr-fg' placeholder='Task'></textarea>
+					<textarea class='task-time clr-fg' placeholder='00:00:00'></textarea>
+					<button class='task-start clr-fg'>Start</button>
+					<button class='task-stop clr-fg'>Stop</button>
+				</li>
+			</ol>
+		</div>
 		<div id='colors' class='cell'>
 			<div id='top'>
 				<textarea class='clr-fg' id='color-value' placeholder='Enter color'></textarea>
@@ -45,11 +115,6 @@
 					<li class='color' id='t'>#7f8c8d</li>
 				</ol>
 			</div>
-		</div>
-		<div id='title' class='cell clr-fg'>
-			<div id='city'></div>
-			<div id='date'></div>
-			<div id='time'></div>
 		</div>
 		<div id='stats' class='cell clr-fg'>
 			<div id='name'>Name:<br />Abhinav 'Abhi' Vedati</div> 
@@ -155,8 +220,8 @@
 				</li>
 			</ol>
 		</div>
-		<div id='note1' class='cell clr-fg'><textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder='Enter notes here.' class='clr-fg'></textarea></div>
-		<div id='note2' class='cell clr-fg'><textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder='Enter notes here.' class='clr-fg'></textarea></div>
+		<div id='note1' class='cell clr-fg'><textarea autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' placeholder='Enter notes here.' class='clr-fg'></textarea></div>
+		<div id='note2' class='cell clr-fg'><textarea autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' placeholder='Enter notes here.' class='clr-fg'></textarea></div>
 		<div id='options' class='cell'>
 			<button id='save' class='clr-fg'>Save</button>
 			<button id='load' class='clr-fg'>Load</button>
