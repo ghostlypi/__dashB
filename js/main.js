@@ -270,10 +270,10 @@ window.onload = () =>
 			id('note2').childNodes[0].value = data.note2 || '';
 			for(let i=0;i<10;i++)
 			{
-				cls('goal')[i].value = 
-					data['goal' + i].name || '';
-				cls('percent')[i].value = 
-					data['goal' + i].data || '';
+				cls('goal')[i].value = data['goal' + i].name || '';
+				cls('percent')[i].value = data['goal' + i].data || '';
+				cls('task-name')[i].value = data['task' + i].name || '';
+				cls('task-time')[i].value = data['task' + i].time || '';
 			}
 		};
 		reader.readAsText(fl);
